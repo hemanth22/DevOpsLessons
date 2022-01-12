@@ -1,11 +1,6 @@
-# Unix and Scripting snippets
+# Devops related
 
-> Quick Unix and Scripting snippets
-
-- Unix commands
-- Bash / Shell scripts
-- SED
-- AWK
+> Quick snippets
 
 [Get Started](?id=table-of-contents)
 [GitHub](https://github.com/hemanth22/lessonslearnt)
