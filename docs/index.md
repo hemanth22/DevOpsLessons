@@ -17,6 +17,8 @@
 |13 | [Putting Powershell to work](./PowerShell5.md) |
 |14 | [Powershell Netwoking](./PowerShell6.md) |
 |15 | [Powershell Automation](./PowerShell7.md) |
+|16 | [Git Configs](./gitcommands.md) |
+|17 | [Git Commands](./git_list.md) |
 
 ## About my blogs
 
