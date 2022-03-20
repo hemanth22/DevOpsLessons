@@ -28,3 +28,13 @@ print(list(pip_metadata))
 print("Homepage: ",pip_metadata["Home-page"])
 print("Python requirements",pip_metadata["Requires-Python"])
 ```
+
+## Python code to check data type
+
+```python
+print(type(2 + 4))
+print(type(2 - 4))
+print(type(2 * 4))
+print(type(2 / 4))
+print(type(10.56))
+```
