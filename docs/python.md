@@ -96,3 +96,18 @@ print(round(3.1))
 |`lgamma(x)`	   |Returns the natural logarithm of the absolute value of the Gamma function at x`|
 |`pi`	           |Mathematical constant, the ratio of circumference of a circle to it's diameter (3.14159...)`|
 |`e`           |mathematical constant e (2.71828...)`|
+
+## Operator Precedence
+
+```python
+# Operator Precedence
+
+print(20 - 3 * 4) #8
+
+print((20 - 3) + 2 ** 2) #21
+
+#()
+# **
+# * /
+# + -
+```
