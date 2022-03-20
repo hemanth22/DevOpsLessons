@@ -16,3 +16,4 @@
 * [Powershell Automation](./PowerShell7.md)
 * [Git Configs](./gitcommands.md)
 * [Git Commands](./git_list.md)
+* [Python](./python.md)

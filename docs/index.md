@@ -19,6 +19,7 @@
 |15 | [Powershell Automation](./PowerShell7.md) |
 |16 | [Git Configs](./gitcommands.md) |
 |17 | [Git Commands](./git_list.md) |
+|18 | [Python](./python.md) |
 
 ## About my blogs
 
