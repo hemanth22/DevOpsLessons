@@ -320,6 +320,19 @@ selfish[0] = '8'
 #here there will be error, because strings are immutable
 ```
 
+```
+There are mutable and Immutable types of Pythons built in types Mutable built-in types 
+ 
+List 
+Sets 
+Dictionaries 
+Immutable built-in types 
+ 
+Strings 
+Tuples 
+Numbers 
+```
+
 ## Bultin Functions + Methods
 
 ```python
