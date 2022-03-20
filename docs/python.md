@@ -304,3 +304,49 @@ print(selfish[-1])
 # [::-1] Reverse an order or string
 print(selfish[::-1])
 ```
+
+## Immutability
+
+```python
+selfish = '01234567'
+
+#selfish = 100
+#print(selfish)
+
+selfish = selfish + '8' # This will replace whole selfish data
+print(selfish)
+
+selfish[0] = '8'
+#here there will be error, because strings are immutable
+```
+
+## Bultin Functions + Methods
+
+```python
+## Built-in Functions + Methods
+
+# Refer to python built functions url: https://docs.python.org/3/library/functions.html
+# Refer to string methods url: https://www.w3schools.com/python/python_ref_string.asp
+print(len('hellloooo'))
+
+greet = 'hellloooo'
+print(greet[0:len(greet)])
+
+
+quote = 'to be or not to be'
+print(quote.upper())
+
+print(quote.capitalize())
+
+print(quote.lower())
+
+print(quote.find('be'))
+
+print(quote.replace('be','me'))
+
+print(quote)
+
+quote2 = quote.replace('be','me')
+print(quote2)
+print(quote)
+```
