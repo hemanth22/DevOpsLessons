@@ -366,3 +366,40 @@ print(bool(0))
 
 print(bool('True'))
 ```
+
+## Exercise: Type Conversion
+
+```python
+## Exercise: Type Conversion
+
+name = 'Andrei Neagoie'
+ages = 50
+relationship_status = 'single'
+
+relationship_status = 'it\'s complicated'
+
+print(relationship_status)
+
+birth_year = input('What year were you born?')
+print(type(birth_year))
+
+age = 2019 - float(birth_year)
+print(f'You are {age} years old')
+```
+
+## Developer Fundamentals II
+
+```python
+#python commenting practices url :https://realpython.com/python-comments-guide/
+
+fundnamae = 'Andrei'
+is_cool = False
+is_cool = True
+
+"""
+This is quite a long comment
+It is a multiline comment
+"""
+
+print(bool('True'))
+```
