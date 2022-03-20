@@ -350,3 +350,19 @@ quote2 = quote.replace('be','me')
 print(quote2)
 print(quote)
 ```
+
+## Booleans
+
+```python
+#booleans
+
+name = 'Andrei'
+is_cool = False
+
+is_cool = True
+
+print(bool(1))
+print(bool(0))
+
+print(bool('True'))
+```
