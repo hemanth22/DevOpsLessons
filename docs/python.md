@@ -237,3 +237,21 @@ last_name = 'Neagoie'
 full_name = first_name + ' ' + last_name
 print(full_name)
 ```
+
+## String Concatenation
+
+```python
+# string concatenation
+print('hello'+' Andrei')
+```
+
+## Type Concatenation
+
+```python
+print(type(str(100)))
+print(type(int((str(101)))))
+a = str(100)
+b = int(a)
+c = type(b)
+print(c)
+```
