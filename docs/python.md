@@ -197,3 +197,13 @@ print("Decimal equivalent of octal 101 is", Octal)
 |`while`	    |`To create a while loop`|
 |`with`	    |`Used to simplify exception handling`|
 |`yield`	    |`To end a function, returns a generator`|
+
+## Variables
+
+```python
+a,b,c=1,2,3
+print(a)
+print(b)
+print(c)
+```
+
