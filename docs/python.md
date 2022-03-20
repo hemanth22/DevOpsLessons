@@ -416,3 +416,393 @@ It is a multiline comment
 
 print(bool('True'))
 ```
+
+## Exercise: Password Checker
+
+```python
+## Exercise: Password Checker
+# input('jayjay')
+# input('secret')
+# print('{username}, your password {*****} is {6} letters long')
+# print('*' * 10)
+
+username=input('What is your username?')
+password=input('What is your password?')
+
+password_length = len(password)
+hidden_password = ('*' * password_length)
+
+print(f'{username}, your password {hidden_password} is {len(password)} letters long')
+```
+
+## Lists
+
+```python
+## lists
+
+#li = [1,2,3,4,5]
+#li2 = ['a','b','c']
+#li3 = [1,2,'a',True]
+
+amazon_cart = ['notebooks', 'sunglasses', 'toys', 'books', 'guitar']
+print(amazon_cart[1])
+```
+
+## list slicing
+
+```python
+#list slicing
+#string = 'helllooo'
+#string[0:2:1]
+# Exmaple: https://replit.com/@aneagoie/lists#main.py
+amazon_cart = ['notebooks', 'sunglasses', 'toys', 'grapes']
+# print(amazon_cart[0:2])
+
+amazon_cart[0] = 'laptop'
+# new_cart = amazon_cart[0:3]
+new_cart = amazon_cart[:]
+new_cart[0] = 'gum'
+print(new_cart)
+print(amazon_cart)
+```
+
+## Matrix
+
+```python
+## Matrix
+
+matrix = [
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+    ]
+
+print(matrix[0][1])
+```
+
+## List methods
+
+```python
+## List method
+
+# list method url : https://www.w3schools.com/python/python_ref_list.asp
+
+basket = [1,2,3,4,5]
+#print(len(basket))
+
+# append
+basket.append(100)
+new_list = basket
+new_lists = basket.append(101)
+print(basket)
+print(new_list)
+print(new_lists)
+
+basket.insert(4,104)
+news = basket
+print(news)
+
+basket.extend([106])
+new_lists5 = basket
+print(new_lists5)
+
+# pop
+
+basket.pop()
+basket.pop(0)
+print(basket)
+
+# remove
+
+basket.remove(4)
+print(basket)
+
+# clear
+
+basket.clear()
+new_lists7 = basket
+print(new_lists7)
+```
+
+## List methods 2
+
+```python
+## List methods 2
+
+# list method 2 url https://www.w3schools.com/python/python_ref_keywords.asp
+# relpit url: https://replit.com/@aneagoie/lists-2
+
+basket = ['a', 'b', 'c', 'd', 'e','d']
+print(basket.index('d',0,4))
+
+print('x' in basket)
+print('i' in 'hi my name is Ian')
+
+print(basket.count('d'))
+```
+
+## List methods 3
+
+```python
+## list methods 3
+
+basket = ['a', 'b', 'c', 'd', 'e','d']
+basket.sort()
+print(basket)
+new_basket = ['x','a', 'b', 'c', 'd', 'e','d']
+print(sorted(new_basket))
+
+new_basket1 = new_basket[:]
+new_basket1.sort()
+print(new_basket1)
+
+new_basket2 = new_basket.copy()
+new_basket2.sort()
+print(new_basket2)
+
+new_basket.reverse()
+print(new_basket)
+```
+
+## Command List Patterns
+
+```python
+# Excercise https://replit.com/@aneagoie/lists-3
+
+basket = ['x','a', 'b', 'c', 'd', 'e','d']
+basket.sort()
+basket.reverse()
+print(basket)
+#print(basket[::-1])
+#print(basket[:])
+#print(basket)
+#print(list(range(1,100))) 1 to 99
+#print(list(range(100))) # 0 t0 99
+
+sentence = ''
+new_sentence = sentence.join(['hi','my','name','is','JOJO'])
+print(new_sentence)
+```
+
+## List unpacking
+
+```python
+## List unpacking
+#a,b,c = [1,2,3]
+a,b,c, *other,d = [1,2,3,4,5,6,7,8,9]
+print(a)
+print(b)
+print(c)
+print(other)
+print(d)
+```
+
+## None
+
+```python
+weapons = None
+print(weapons)
+```
+## Dictionaries
+
+```python
+## Dictionary
+dictionary = {
+    'a':1,
+    'b':2,
+    'x':3
+}
+
+print(dictionary['b'])
+print(dictionary)
+
+dictionary1 = {
+    'a':[1,2,3],
+    'b':'hello',
+    'x':True
+}
+
+print(dictionary1)
+print(dictionary1['a'][1])
+
+my_list = [
+    {
+        'a': [1,2,3],
+        'b': 'hello',
+        'x': True
+    },
+    {
+        'a': [4,5,6],
+        'b': 'hello',
+        'x': True
+    }
+]
+print(my_list[0]['a'][2])
+```
+
+## Developer Fundamentals III
+
+```python
+## Developer Fundamentals III
+
+dictionary = {
+    'weapons': [1,2,3],
+    'greeting': 'hello',
+    'is_Magic': True
+}
+
+print(dictionary['weapons'][1])
+```
+
+## Dictionary Keys
+
+```python
+## Dictionary Keys
+
+dictionary = {
+    123: [1,2,3],
+    'greeting': 'hello',
+    'is_Magic': True
+}
+print(dictionary[123])
+
+dictionary1 = {
+    123: [1,2,3],
+    123: 'hello'
+}
+
+print(dictionary1[123])
+```
+
+## Dictionary Methods
+
+```python
+## Dictionary Methods
+##referemce url: https://www.w3schools.com/python/python_ref_dictionary.asp
+
+users = {
+    'basket': [1,2,3],
+    'greet': 'hello',
+    'age': 20
+}
+print(users.get('age', 55)) # If age does not exists it will override with 55
+
+users2 = dict(name='JohnJohn')
+print(users2)
+```
+
+## Dictionary Methods 2
+
+```python
+## Dictionary Methods 2
+## url https://replit.com/@aneagoie/dictionary
+
+user = {
+    'basket': [1,2,3],
+    'greet': 'hello',
+    'age': 20
+}
+print('basket' in user)
+print('size' in user)
+print('hello' in user.values())
+print('hello' in user.items())
+print(user.items())
+user2 = user.copy()
+user3 = user.copy()
+user.clear()
+print(user)
+print(user2)
+
+user2.pop('age')
+print(user2)
+
+print(user2.popitem())
+print(user2)
+
+print(user2.update({'age': 55}))
+print(user2)
+```
+
+## Tuples
+
+```python
+# Tuple
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple[1])
+print(5 in my_tuple)
+
+user = {
+    (1,2): [1,2,3],
+    'greet': 'hello',
+    'age': 20
+}
+
+print(user[(1,2)])
+```
+
+## Tuples 2
+
+```python
+## Tuples 2
+# https://www.w3schools.com/python/python_ref_tuple.asp
+
+my_tuple = (1, 2, 3, 4, 5, 5)
+mew_tuple = my_tuple[1:2]
+print(mew_tuple)
+
+x,y,z, *other = (1, 2, 3, 4, 5)
+print(x,y,z,other)
+
+print(my_tuple.count(5))
+print(my_tuple.index(5))
+print(len(my_tuple))
+```
+
+## Sets
+
+```python
+## Sets
+my_set = {1, 2, 3, 4, 5, 5}
+my_set.add(100)
+my_set.add(2)
+print(my_set)
+
+my_list = [1,2,3,4,5,5]
+print(set(my_list))
+print( 1 in my_set)
+print(len(my_set))
+print(list(my_set))
+
+new_set = my_set.copy()
+my_set.clear()
+print(my_set)
+print(new_set)
+```
+
+## Sets2
+
+```python
+my_set = {1,2,3,4,5,5}
+your_set = {4, 5, 6, 7, 8, 9, 10}
+
+# https://www.w3schools.com/python/python_ref_set.asp
+# https://replit.com/@aneagoie/sets
+
+# print(my_set.difference(your_set))
+# print(my_set)
+# print(my_set.discard(5))
+# print(my_set)
+# print(my_set.difference_update(your_set))
+# print(my_set)
+# print(my_set & your_set)
+# print(my_set.intersection(your_set))
+# print(my_set.isdisjoint(your_set))
+# print(my_set.union(your_set))
+# print(my_set | your_set)
+
+my_sets = {4,5}
+your_sets = {4, 5, 6, 7, 8, 9, 10}
+
+print(my_sets.issubset(your_sets))
+print(your_sets.issuperset(my_sets))
+```
