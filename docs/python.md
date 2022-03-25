@@ -806,3 +806,15 @@ your_sets = {4, 5, 6, 7, 8, 9, 10}
 print(my_sets.issubset(your_sets))
 print(your_sets.issuperset(my_sets))
 ```
+
+## conditional Logic
+
+```python
+is_old = True
+is_licensed = True
+
+if is_old and is_licensed:
+  print("You are old enough to drive, with license!")
+else:
+  print("You cannot drive")
+```
