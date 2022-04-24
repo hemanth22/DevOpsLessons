@@ -966,3 +966,18 @@ for item in user.items():
 #iterable - list, dictionary, tuple, set, string
 #iterate -> one by one check each item in the collection
 ```
+## Excercise Tricky counter
+
+```python
+# counter
+my_list = [1,2,3,4,5,6,7,8,9,10]
+
+counter = 0
+for item in my_list:
+    counter += item
+    print(counter)
+
+
+print("Outside for loop: ", counter)
+```
+
