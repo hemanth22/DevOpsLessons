@@ -854,3 +854,29 @@ else:
 
 ## Logical Operators
 
+```python
+## Logical Operator
+
+print('a' > 'A') # True
+
+print(1 < 2 > 3 < 4) # False
+
+print(0 != 0)
+
+# < > == >= <= !=
+# and or not 
+```
+
+## Exercise: Logical Operators
+
+```python
+is_magician = True
+is_expert = False
+
+if is_expert and is_magician:
+    print("You are a master magician!")
+elif is_magician and not is_expert:
+    print("At least you're getting there")
+elif not is_magician:
+    print("You need magic powers")
+```
