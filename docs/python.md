@@ -1323,3 +1323,18 @@ def checkDriverAge(age=0):
         print("Congratulations on your first year of driving. Enjoy the ride!")
 checkDriverAge()
 ```
+
+## Docstring
+
+```python
+def test(a):
+    '''
+    Info: this function tests and prints param a
+    '''
+    print(a)
+
+test('!!!!')
+
+## help(test)
+print(test.__doc__)
+```
