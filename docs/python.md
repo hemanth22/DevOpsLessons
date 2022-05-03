@@ -1198,3 +1198,33 @@ print(duplicates)
 singleduplicates = []
 singleduplicates = [ values for values in some_list if some_list.count(values) > 1 if values in singleduplicates]
 ```
+
+## Functions
+
+```python
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
+
+def show_picture():    
+    for row in picture:
+        for pixel in row:
+            if (pixel == 1):
+                print('*', end='')
+            else:
+                print(' ', end='')
+        print('')
+
+show_picture()
+
+print("This will display memory location of function :", show_picture)
+```
+
+## Parameters and Arguments
+
+
