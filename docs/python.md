@@ -1413,3 +1413,31 @@ def super_func4(name,*args,i='hi',**kwargs):
 print(super_func4.__doc__)
 print(super_func4('Andy',1,2,3,4,5, num1=5, num2=10))
 ```
+
+## Exercise functions
+
+```python
+def highest_even(li):
+    evens = []
+    for item in li:
+        if item % 2 == 0:
+            evens.append(item)
+    return max(evens)
+
+print(highest_even([2,10,2,3,4,8,11]))
+```
+
+## ## Walrus Operator
+
+```python
+## Walrus Operator :=
+
+a = 'hellooooooooooooooo'
+
+if ((n := len(a)) > 10):
+    print(f"too long {n} elements")
+
+while ((n := len(a)) > 1):
+    print(n)
+    a = a[:-1]
+```
