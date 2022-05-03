@@ -1427,7 +1427,7 @@ def highest_even(li):
 print(highest_even([2,10,2,3,4,8,11]))
 ```
 
-## ## Walrus Operator
+## Walrus Operator
 
 ```python
 ## Walrus Operator :=
