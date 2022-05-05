@@ -1461,3 +1461,9 @@ outer()
 #3 - global
 #4 - built in python functions
 ```
+
+## Installating PEP8.0
+
+```python
+pip install autopep8, pycodestyle
+```
