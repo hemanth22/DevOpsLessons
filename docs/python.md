@@ -1642,3 +1642,24 @@ print(player3.age)
 __Instance Methods:__ The most common method type. Able to access data and properties unique to each instance.  
 __Static Methods:__ Cannot access anything else in the class. Totally self-contained code.  
 __Class Methods:__ Can access limited methods in the class. Can modify class specific details.  
+
+## Reviewing knowledge
+
+```python
+class NameOfClass():
+    class_attribute = 'value'
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+    
+    def method(self):
+        #code
+    
+    @classmethod
+    def cls_method(cls, param1, param2):
+        #code
+    
+    @staticmethod
+    def stc_method(param1, param1):
+        #code
+```
