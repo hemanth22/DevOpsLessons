@@ -1608,3 +1608,37 @@ print(f"The oldest cat is {get_oldest_cat(peanut.age, garfield.age, snickers.age
 
 ## `@classmethod and @staticmethod`
 
+```python3
+class PlayerCharacter:
+    # Class Object Attribute
+    membership = True #This is static attribute
+    def __init__(self, name, age):
+        # self = name This is for parameter in class
+        self.name = name # This is to make parameter in class and make dynamic output access
+        self.age = age
+    
+    def shout(self):
+        print(f'my name is {self.name}')
+    
+#    @classmethod
+#    def adding_things(cls, num1, num2):
+#        return num1 + num2
+#print(PlayerCharacter.adding_things(2,3))
+
+    @classmethod
+    def adding_things(cls, num1, num2):
+        return cls('Teddy', num1 + num2)
+    
+    @staticmethod
+    def adding_things2(num1, num2):
+        return num1 + num2
+
+player3 = PlayerCharacter.adding_things(10,20)
+print(player3.age)
+```
+
+### Reference: https://www.makeuseof.com/tag/python-instance-static-class-methods/
+
+__Instance Methods:__ The most common method type. Able to access data and properties unique to each instance.  
+__Static Methods:__ Cannot access anything else in the class. Totally self-contained code.  
+__Class Methods:__ Can access limited methods in the class. Can modify class specific details.  
