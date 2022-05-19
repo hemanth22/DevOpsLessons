@@ -1760,4 +1760,11 @@ player1 = PlayerCharacter('andrei',100)
 print(player1.speak)
 ```
 
+__Private Members:__ `__function`
+__Protected Memebers:__ `_function`
+__Public Members:__ `funtion`
+
+
+__Reference:__ https://www.geeksforgeeks.org/access-modifiers-in-python-public-private-and-protected/
+
 ## Inheritance
