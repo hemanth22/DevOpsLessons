@@ -2077,3 +2077,50 @@ print(dir(wizard1))
 ```
 
 ## Dunder Methods
+
+```python
+## Dunder Methods
+
+class Toy():
+    def __init__(self, color, age):
+        self.color = color
+        self.age = age
+        self.my_dict = {
+            'name': 'Yoyo',
+            'has_pets': False
+        }
+    
+    def __str__(self): ## This is a dunder method that is used for method overriding
+        return f'{self.color}'
+    
+    def __len__(self):
+        return 5
+
+
+#def __del__(self):
+#    print('deleted')
+ 
+    def __call__(self):
+        return('yess??')
+
+    def __getitem__(self, i):
+        return self.my_dict[i]
+
+action_figure = Toy('red',0)
+print(action_figure.__str__())
+print(str(action_figure))
+print(len(action_figure))
+# del action_figure
+print(action_figure()) ## This is for call dunder method
+print(action_figure['name']) 
+
+## reference: https://docs.python.org/3/reference/datamodel.html#special-method-names
+```
+
+```text
+Dunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: __init__, __add__, __len__, __repr__ etc.
+
+The __init__ method for initialization is invoked without any call, when an instance of a class is created, like constructors in certain other programming languages such as C++, Java, C#, PHP etc. These methods are the reason we can add two strings with ‘+’ operator without any explicit typecasting.
+```
+
+## Exercise: Extending List
