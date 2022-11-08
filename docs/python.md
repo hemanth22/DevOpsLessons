@@ -2469,3 +2469,22 @@ print(my_dict2)
 my_dict3 = {num:num*2 for num in [1,2,3]}
 print(my_dict3)
 ```
+
+
+### Exercise on comprehensions
+
+```python
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+duplicates = []
+for value in some_list:
+    if some_list.count(value) > 1:
+        if value not in duplicates:
+            duplicates.append(value)
+
+print(duplicates)
+## Doing using comprehensions below
+
+duplicates1 =  list(set([x for x in some_list if some_list.count(x) > 1]))
+print(duplicates1)
+```
