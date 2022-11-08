@@ -2417,3 +2417,55 @@ print(my_list5)
 ```
 
 ### Set and Dictionary Comprehension
+
+```python
+#list, set, dictionary
+
+#sets
+
+#In python, a set is a built-in class, and this function is a constructor of this class.
+#It is used to create a new set using elements passed during the call.
+#It takes iterable as an argument and returns a new set object.
+
+my_list = []
+
+#for char in 'hello':
+#   my_list.append(char)
+
+#print(my_list)
+
+my_list2 = {chd for chd in 'hello'}
+print(my_list2)
+
+my_list3 = {num for num in range(0,100)}
+print(my_list3)
+
+
+my_list4 = {num*2 for num in range(0,100)}
+print(my_list4)
+
+my_list5 = {num**2 for num in range(0,100) if num % 2 == 0}
+print(my_list5)
+
+"""
+Dictionary:
+In Python, a dictionary is one of the core data structures.
+It is a sequence of key-value pairs separated by commas and surrounded by curly braces.
+If you're familiar with JavaScript, Python dictionaries are like JavaScript objects
+"""
+simple_dict = {'a':1, 'b':2}
+
+my_dict = {key:value**2 for key,value in simple_dict.items()}
+
+print(my_dict)
+
+
+my_dict2 = {key:value**2 for key,value in simple_dict.items() if value%2==0}
+print(my_dict2)
+
+
+# list to dictionary comprehensions
+
+my_dict3 = {num:num*2 for num in [1,2,3]}
+print(my_dict3)
+```
