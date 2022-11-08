@@ -2296,3 +2296,35 @@ def only_odd(item):
 
 print(list(zip(my_list, your_list, their_list)))
 ```
+
+### reduce
+
+```python
+# map, filter, zip and reduce
+
+#Python's reduce() is a function that implements a mathematical technique called folding or reduction. 
+#reduce() is useful when you need to apply a function to an iterable and reduce it to a single cumulative value.
+
+from functools import reduce
+
+my_list = [4,5,6]
+
+def only_odd(item):
+    return item % 2 != 0
+
+def accumlaters(acc, item):
+    print(acc, item)
+    return acc + item
+
+print(reduce(accumlaters, my_list, 0))
+print("-----------------------------")
+print(reduce(accumlaters, my_list, 10))
+
+
+def accumlaters1(acc, item):
+    #print(acc, item)
+    return acc + item
+
+print("-----------------------------")
+print(reduce(accumlaters1, my_list, 10))
+```
