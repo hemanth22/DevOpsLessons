@@ -2236,7 +2236,7 @@ print(list_multiply_by2([1,2,3]))
 
 ### maps
 
-```python3
+```python
 # map, filter, zip and reduce
 
 # Map in Python is a function that works as an iterator to return
@@ -2256,4 +2256,24 @@ print("-----------------------------------")
 print(my_list)
 
 #print(list_multiply_by2([1,2,3]))
+```
+
+### filter
+
+```python
+# map, filter, zip and reduce
+
+# Python's filter() is a built-in function that allows you to process an iterable
+# and extract those items that satisfy a given condition.
+# This process is commonly known as a filtering operation.
+
+my_list = [4,5,6]
+
+#print(list_multiply_by2([1,2,3]))
+
+def only_odd(item):
+    return item % 2 != 0
+
+print(list(filter(only_odd, my_list)))
+print(my_list)
 ```
