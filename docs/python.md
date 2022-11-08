@@ -2328,3 +2328,46 @@ def accumlaters1(acc, item):
 print("-----------------------------")
 print(reduce(accumlaters1, my_list, 10))
 ```
+
+### lambda
+
+```python
+# map, filter, zip and reduce
+
+# Python Lambda Functions are anonymous function means that the function is without a name. 
+# As we already know that the def keyword is used to define a normal function in Python.
+# Similarly, the lambda keyword is used to define an anonymous function in Python.
+
+from functools import reduce
+
+# lambda param: action(param)
+
+my_list = [4,5,6]
+
+#def only_odd(item):
+#    return item % 2 != 0
+
+#def accumlaters(acc, item):
+#    print(acc, item)
+#    return acc + item
+
+#print(reduce(accumlaters, my_list, 0))
+#print("-----------------------------")
+#print(reduce(accumlaters, my_list, 10))
+
+
+#def accumlaters1(acc, item):
+    #print(acc, item)
+#    return acc + item
+
+#print("-----------------------------")
+#print(reduce(accumlaters1, my_list, 10))
+
+
+print(list(map(lambda item: item*2, my_list)))
+print("-----------------------------")
+print(list(filter(lambda item: item%2!=0, my_list)))
+print("-----------------------------")
+print(reduce(lambda acc, item: acc+item, my_list))
+```
+
