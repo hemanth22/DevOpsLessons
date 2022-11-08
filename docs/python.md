@@ -1,6 +1,6 @@
 ## DataTypes
 
-__Fundamental Data Types__
+## Fundamental Data Types
 
 int  
 float  
