@@ -2233,3 +2233,27 @@ def list_multiply_by2(li):
 
 print(list_multiply_by2([1,2,3]))
 ```
+
+### maps
+
+```python3
+# map, filter, zip and reduce
+
+# Map in Python is a function that works as an iterator to return
+# a result after applying a function to every item of an iterable (tuple, lists, etc.).
+# It is used when you want to apply a single transformation function to all the iterable elements.
+# The iterable and function are passed as arguments to the map in Python
+my_list = [4,5,6]
+def list_multiply_by2(item):
+    return item*2
+
+#print(map(list_multiply_by2, [1,2,3]))
+print("-----------------------------------")
+print(list(map(list_multiply_by2, [1,2,3])))
+print("-----------------------------------")
+print(list(map(list_multiply_by2, my_list)))
+print("-----------------------------------")
+print(my_list)
+
+#print(list_multiply_by2([1,2,3]))
+```
