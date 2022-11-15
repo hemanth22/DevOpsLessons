@@ -2488,3 +2488,55 @@ print(duplicates)
 duplicates1 =  list(set([x for x in some_list if some_list.count(x) > 1]))
 print(duplicates1)
 ```
+## Advanced Python: Decorators
+
+### Decorators
+
+```python
+"""
+A decorator is a design pattern in Python 
+that allows a user to add new functionality to 
+an existing object without modifying its structure.
+Decorators are usually called before the definition of a function you want to decorate.
+"""
+
+"""
+Below are examples of decorators
+@classmethod
+@staticmethod
+"""
+
+"""
+
+def hello():
+    print('helllllllllllloooo')
+"""
+#greet = hello() -> this will print helllllllllllloooo & None
+
+"""
+below will print function location
+greet = hello 
+print(greet)
+"""
+
+"""
+greet = hello
+del hello
+hello() -> this will throw an error because of above del function
+print(greet())
+"""
+
+def hello(func):
+    func()
+
+def greet():
+    print('still here!')
+
+a = hello(greet)
+
+print(a)
+
+"""
+@decorator
+"""
+```
