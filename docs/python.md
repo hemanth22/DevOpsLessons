@@ -2553,3 +2553,86 @@ def greet2():
         return 5
     return func
 ```
+
+### Decorators 2
+
+```python
+def my_decorator(func):
+    def wrap_func():
+        print('********')
+        func()
+        print('********')
+    return wrap_func
+
+@my_decorator
+def hello():
+    print('helllooooo')
+
+@my_decorator
+def bye():
+    print('see ya later')
+
+hello()
+bye()
+
+hello2 = my_decorator(hello)
+hello2()
+```
+
+__Output__
+```
+********
+helllooooo
+********
+********
+see ya later
+********
+```
+
+```python
+def my_decorator(func):
+    def wrap_func():
+        print('********')
+        func()
+        print('********')
+    return wrap_func
+
+def hello():
+    print('helllooooo')
+
+def bye():
+    print('see ya later')
+
+hello2 = my_decorator(hello)
+hello2()
+```
+__Output__
+```
+********
+helllooooo
+********
+```
+
+
+```python
+def my_decorator(func):
+    def wrap_func():
+        print('********')
+        func()
+        print('********')
+    return wrap_func
+
+def hello():
+    print('helllooooo')
+
+def bye():
+    print('see ya later')
+
+my_decorator(hello)()
+```
+__Output__
+```
+********
+helllooooo
+********
+```
